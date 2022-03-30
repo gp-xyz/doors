@@ -46,6 +46,10 @@ class DoorWay {
         else{
             slightlyBevelRectangle(292,knobpos,50,30,color(230),color(150),"light");  
         }
+
+        if (random(1) > .67){
+            skull();
+        }
     }
 
 
@@ -70,4 +74,32 @@ function slightlyBevelRectangle(x,y,w,h,c1,c2,style){
     }
     
 }
+
+
+function skull() {
+
+
+    noStroke();
+  
+    // Change the fill color to white.
+    fill(255);
+  
+    // Draw the top circle part of the skull.
+    ellipse(180, 200, 150, 100);
+  
+    // Draw the bottom rectangle part of the skull.
+    rect(140, 240, 75, 50);
+  
+    // Change the fill color to black.
+    fill(0);
+  
+    // Draw the eyes.
+    ellipse(140, 200, 25, 25);
+    ellipse(225, 200, 25, 25);
+  
+    // Draw the teeth lines.
+    rect(150, 250, 8, 30);
+    rect(175, 250, 8, 30);
+    rect(200, 250, 8, 30);
+  }
       
